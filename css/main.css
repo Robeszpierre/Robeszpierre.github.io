@@ -365,6 +365,18 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+body {
+  font-size: 16px; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 2em; }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//img/background.jpg);
   height: 800px;
@@ -377,7 +389,6 @@ header {
 header > * {
   font-family: 'Dancing Script', cursive;
   text-align: center;
-  color: #e6e6e6;
-  font-size: 4em; }
+  color: #e6e6e6; }
 
 /*# sourceMappingURL=main.css.map */
