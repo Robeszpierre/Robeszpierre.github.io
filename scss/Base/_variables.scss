@@ -1,2 +1,8 @@
 //Vars
 $imgPath : "/img";
+
+//colors
+$gradient1:  darken(rgba(252, 53, 53, 0.5), 90%);
+$gradient2: darken($gradient1, 10%);
+
+$font-color: darken(white, 10%);

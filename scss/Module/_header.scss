@@ -1,6 +1,17 @@
-.header{
-  background-image: url(../#{$imgPath}/background.jpg);
-   height: 500px;
-   background-size: 100%;
+header{
+  background-image: linear-gradient(#{$gradient1}, #{$gradient2}), url(..//img/background.jpg);
+   height: 800px;
+   background-size: 100% 100%;
    background-repeat: no-repeat;
+  h2 {
+    margin-top: 0;
+    padding-top: 4em;
+  }
+}
+
+header > * {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: $font-color;
+    font-size: 4em;
 }
