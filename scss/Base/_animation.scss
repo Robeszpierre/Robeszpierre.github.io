@@ -1,0 +1,11 @@
+@keyframes email {
+  from {background-color: darken($font-color, 40%);}
+  to {background-color: $font-color;}
+}
+
+.logo:hover{
+animation-name: email; -webkit-animation-name: email; 
+animation-duration: .5s; -webkit-animation-duration: .5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}

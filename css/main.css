@@ -377,8 +377,21 @@ h2 {
 h3 {
   font-size: 2em; }
 
+@keyframes email {
+  from {
+    background-color: gray; }
+  to {
+    background-color: #e6e6e6; } }
+.logo:hover {
+  animation-name: email;
+  -webkit-animation-name: email;
+  animation-duration: .5s;
+  -webkit-animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//img/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..///img/background.jpg);
   height: 800px;
   background-size: 100% 100%;
   background-repeat: no-repeat; }
@@ -390,5 +403,18 @@ header > * {
   font-family: 'Dancing Script', cursive;
   text-align: center;
   color: #e6e6e6; }
+
+.logo {
+  display: block;
+  position: fixed;
+  right: 0;
+  text-indent: -9999px;
+  width: 3em;
+  height: 3em;
+  -webkit-mask: url(../img/mail.svg) no-repeat;
+  mask: url(../img/mail.svg) no-repeat;
+  -webkit-mask-size: cover;
+  background-color: gray;
+  opacity: .7; }
 
 /*# sourceMappingURL=main.css.map */

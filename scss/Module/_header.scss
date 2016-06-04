@@ -1,5 +1,5 @@
 header{
-  background-image: linear-gradient(#{$gradient1}, #{$gradient2}), url(..//img/background.jpg);
+  background-image: linear-gradient(#{$gradient1}, #{$gradient2}), url(..//#{$imgPath}/background.jpg);
    height: 800px;
    background-size: 100% 100%;
    background-repeat: no-repeat;
@@ -13,4 +13,18 @@ header > * {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     color: $font-color;
+}
+
+.logo {
+  display: block;
+  position: fixed;
+  right: 0;
+  text-indent: -9999px;
+  width: 3em;
+  height: 3em;
+  -webkit-mask: url(../img/mail.svg) no-repeat;
+  mask: url(../img/mail.svg) no-repeat;
+  -webkit-mask-size: cover;
+  background-color:  darken($font-color, 40%);
+  opacity: .7;
 }
