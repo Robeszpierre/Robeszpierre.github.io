@@ -397,7 +397,7 @@ header {
   background-repeat: no-repeat; }
   header h2 {
     margin-top: 0;
-    padding-top: 4em; }
+    padding-top: 3em; }
 
 header > * {
   font-family: 'Dancing Script', cursive;
@@ -416,5 +416,31 @@ header > * {
   -webkit-mask-size: cover;
   background-color: gray;
   opacity: .7; }
+
+.mailCaption {
+  text-align: right;
+  margin-top: 2em;
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  font-size: 1.5em; }
+
+html, body {
+  height: 100%; }
+
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -54px; }
+  #root #root_footer {
+    height: 54px; }
+
+#footer {
+  clear: both;
+  position: relative;
+  height: 54px;
+  background-color: pink; }
 
 /*# sourceMappingURL=main.css.map */
