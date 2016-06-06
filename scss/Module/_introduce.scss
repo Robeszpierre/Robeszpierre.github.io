@@ -1,9 +1,6 @@
 .introduce{
   background-color: lighten($background, 3%);
   height: 200px;
-  display:flex;
-  align-items: center; /* Vertical center alignment */
-  justify-content: center;
-  width: 100%;
   font-style: italic;
+@extend %verticalMiddle;
 }

@@ -1,22 +1,29 @@
-@mixin sticky-footer($footer-height, $root-selector: unquote("#root"), $root-footer-selector: unquote("#root_footer"), $footer-selector: unquote("#footer")) {
-  html, body {
-    height: 100%;
-  }
-  #{$root-selector} {
-    clear: both;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin-bottom: -$footer-height;
-    #{$root-footer-selector} {
-      height: $footer-height;
-    }
-  }
-  #{$footer-selector} {
-    clear: both;
-    position: relative;
-    height: $footer-height;
-  }
+
+
+.wrapper{
+  min-height: calc(100vh - $footerHeight );
 }
 
-@include sticky-footer(54px)
+footer {
+  height: $footerHeight ;
+@extend %verticalMiddle;
+}
+
+.social li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+[class^="icon-"] {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../#{$imgPath}/sprite.svg");
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.icon-facebook {
+  background-position: 0 -32px;
+}
