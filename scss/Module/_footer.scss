@@ -1,9 +1,4 @@
 
-
-.wrapper{
-  min-height: calc(100vh - $footerHeight );
-}
-
 footer {
   height: $footerHeight ;
 @extend %verticalMiddle;
@@ -30,4 +25,21 @@ footer {
 
 .icon-treehouse {
   background-position: 0 -128px;
+}
+
+// Sticky footer
+
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -$footerHeight;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: $footerHeight;
 }
