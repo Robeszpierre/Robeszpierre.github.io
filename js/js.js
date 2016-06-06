@@ -5,7 +5,7 @@ $( ".logo" ).hover(function(){
 });
 
 $(".icon-mark-github").hover(function(){
-  $(this).css("background-position", "0 -64px");
+  $(this).css("background-position", "0 -32px");
 }, function() {
   $(this).css("background-position", "0 0px");
 });
@@ -13,5 +13,11 @@ $(".icon-mark-github").hover(function(){
 $(".icon-facebook").hover(function(){
   $(this).css("background-position", "0 -96px");
 }, function() {
-  $(this).css("background-position", "0 -32px");
+  $(this).css("background-position", "0 -64px");
+});
+
+$(".icon-treehouse").hover(function(){
+  $(this).css("background-position", "0 -160px");
+}, function() {
+  $(this).css("background-position", "0 -128px");
 });

@@ -460,7 +460,10 @@ footer {
   overflow: hidden; }
 
 .icon-facebook {
-  background-position: 0 -32px; }
+  background-position: 0 -64px; }
+
+.icon-treehouse {
+  background-position: 0 -128px; }
 
 .introduce {
   background-color: #080808;
