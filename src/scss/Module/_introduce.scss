@@ -1,0 +1,6 @@
+.introduce{
+  background-color: lighten($background, 3%);
+  height: 200px;
+  font-style: italic;
+@extend %verticalMiddle;
+}

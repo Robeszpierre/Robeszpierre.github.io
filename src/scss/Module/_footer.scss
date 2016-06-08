@@ -1,0 +1,45 @@
+
+footer {
+  height: $footerHeight ;
+@extend %verticalMiddle;
+}
+
+.social li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+[class^="icon-"] {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../#{$imgPath}/sprite.svg");
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.icon-facebook {
+  background-position: 0 -64px;
+}
+
+.icon-treehouse {
+  background-position: 0 -128px;
+}
+
+// Sticky footer
+
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -$footerHeight;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: $footerHeight;
+}

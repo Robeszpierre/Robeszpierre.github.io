@@ -1,0 +1,39 @@
+header{
+  background-image: linear-gradient(#{$gradient1}, #{$gradient2}), url(..//#{$imgPath}/background.jpg);
+   height: 800px;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+  h2 {
+    margin-top: 0;
+    padding-top: 3em;
+  }
+}
+
+header > * {
+    font-family: 'Dancing Script', cursive;
+}
+
+.logo {
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-indent: -9999px;
+  width: 3em;
+  height: 3em;
+  -webkit-mask: url(../#{$imgPath}/mail.svg) no-repeat;
+  mask: url(../#{$imgPath}/mail.svg) no-repeat;
+  -webkit-mask-size: cover;
+  background-color:  darken($font-color, 40%);
+  opacity: .7;
+}
+
+.mailCaption{
+  top:10px;
+  text-align: right;
+  margin-top: 2em;
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  font-size: 1.5em;
+}

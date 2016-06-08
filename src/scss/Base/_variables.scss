@@ -1,0 +1,21 @@
+//Vars
+$imgPath : "/img";
+
+//colors
+$gradient1:  darken(rgba(252, 53, 53, 0.5), 90%);
+$gradient2: darken($gradient1, 10%);
+
+$font-color: darken(white, 10%);
+$background: black;
+
+//footer height
+$footerHeight : 150px;
+
+$social1: #6A1487;
+
+%verticalMiddle {
+  display:flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center;
+  width: 100%;
+}
