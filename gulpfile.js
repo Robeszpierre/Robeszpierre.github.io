@@ -36,7 +36,7 @@ gulp.task('html', function () {
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', minifyCss()))
-        .pipe(gulp.dest(options.dist));
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task("build", ['html'], function () {
